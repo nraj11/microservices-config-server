@@ -12,4 +12,13 @@ microservice:
     endpoints:
       endpoint: http://PAYMENT-SERVICE/payment/save
       
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/nikhil_local_db
+    username: root
+    password: root
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update      
     
